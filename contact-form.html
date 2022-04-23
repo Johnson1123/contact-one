@@ -83,7 +83,11 @@
           input:focus, textarea:focus{
                outline: none;
           }
-          @media only screen and (min-width: 768px) {
+          .area-text{
+               padding: 2px  5px;
+               font-size: 12px;
+          }
+     @media only screen and (min-width: 768px) {
            .contact-form{
                 width: 70%;
            }
@@ -92,24 +96,59 @@
                margin: 5px 0;
           }
            .label-text{
-               font-size: 26px;
-               margin: 5px 0 3px 10%;
+               font-size: 22px;
+               margin: 5px 0 3px 5px;
           }
           .contact-input{
-               height: 70px;
-               width: 80%;
+               height: 60px;
+               width: 100%;
                margin: 14px 0;
           }
           input[placeholder]{
-               font-size: 22px;
+               font-size: 20px;
+          }
+          textarea{
+               width: 100%;
           }
            .btn-submit{
                width: 30%;
                height: 55px;
-               margin: 20px 0;
+               margin: 40px 0 10px;
                border-radius: 5px;
                border: none;
                font-size: 28px;
+          }
+     }
+
+
+
+     @media only screen and (min-width: 968px) {
+           .contact-form{
+                width: 30%;
+           }
+            .form-title {
+               font-size: 30px;
+               margin: 5px 0;
+          }
+           .label-text{
+               font-size: 15px;
+               margin: 3px 0;
+               font-weight: 500;
+          }
+          .contact-input{
+               height: 35px;
+               margin: 8px 0;
+          }
+          input[placeholder]{
+               font-size: 14px;
+               color: #111;
+          }
+           .btn-submit{
+               width: 30%;
+               height: 40px;
+               margin: 30px 0 10px;
+               border: none;
+               font-size: 16px;
           }
      }
      </style>
@@ -124,8 +163,8 @@
                <input type="text" name="" id="Lname" class="contact-input" placeholder="Last name">
                <label for="email" class="label-text text label_Email">E-mail: </label>
                <input type="email" name="" id="email" class="contact-input" placeholder="E-mail">
-               <label for="des_text" class="label-text text label_des">Description</label>
-               <textarea name="des_text" class="text label-text" id="des_text" cols="30" rows="5"></textarea>
+               <label for="des_text" class="label-text text label_des">Description:</label>
+               <textarea name="des_text" class=" area-text label-text" id="des_text" cols="30" rows="8"></textarea>
                <input type="submit" name="submit" class="btn btn-submit text" value="Submit">
           </form>
      </div>
