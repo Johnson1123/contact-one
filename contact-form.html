@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Contact form</title>
+     <style>
+          *{
+               margin: 0;
+               padding: 0;
+               box-sizing: border-box;
+               list-style: none;
+          }
+          .flex{
+               display: flex;
+               justify-content: center;
+               align-items: center;
+          }
+          .column{
+               flex-direction: column;
+          }
+          .start{
+               justify-content: flex-start;
+          }
+          .s-center{
+               align-self: center;
+          }
+          .align-start{
+               align-items: flex-start;
+          }
+          .end{
+               justify-content: flex-end;
+          }
+          .text{
+               color: #fff;
+               font-family: roboto;
+          }
+          .form-title {
+               font-size: 26px;
+               text-align: center;
+               margin: 15px 0;
+          }
+          .label-text{
+               font-size: 17px;
+               align-self: flex-start;
+               margin: 5px 0 5px 5px;
+          }
+          
+          .form-con{
+               height: 100vh;
+               width: 100vw;
+               background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('background-banner.jpg');
+               background-repeat: no-repeat;
+               background-size: cover;
+               background-position: center center;
+               flex-direction: column;
+          }
+          .contact-form{
+               width: auto;
+               width: 90%;
+          }
+          .contact-input{
+               height: 40px;
+               width: 100%;
+               margin: 5px 0;
+          }
+          textarea{
+               width: 100%;
+          }
+          .btn-submit{
+               width: 30%;
+               height: 50px;
+               margin: 30px 0 10px;
+               border-radius: 5px;
+               border: none;
+               font-size: 18px;
+               background-color: rgb(82, 207, 99);
+          }
+          input[placeholder]{
+               padding-left: 5px;
+          }
+          input:focus, textarea:focus{
+               outline: none;
+          }
+          @media only screen and (min-width: 768px) {
+           .contact-form{
+                width: 70%;
+           }
+            .form-title {
+               font-size: 35px;
+               margin: 5px 0;
+          }
+           .label-text{
+               font-size: 26px;
+               margin: 5px 0 3px 10%;
+          }
+          .contact-input{
+               height: 70px;
+               width: 80%;
+               margin: 14px 0;
+          }
+          input[placeholder]{
+               font-size: 22px;
+          }
+           .btn-submit{
+               width: 30%;
+               height: 55px;
+               margin: 20px 0;
+               border-radius: 5px;
+               border: none;
+               font-size: 28px;
+          }
+     }
+     </style>
+</head>
+<body>
+     <div class="form-con flex">
+          <form action="" method="" class="flex column  contact-form">
+               <h3 class="form-title text s-center">Open Account</h3>
+               <label for="Fname" class="label-text text label_Fname">First Name: </label>
+               <input type="text" class="contact-input" id="Fname" placeholder="First name">
+               <label for="Lname" class="label-text text label_Lname">Last Name: </label>
+               <input type="text" name="" id="Lname" class="contact-input" placeholder="Last name">
+               <label for="email" class="label-text text label_Email">E-mail: </label>
+               <input type="email" name="" id="email" class="contact-input" placeholder="E-mail">
+               <label for="des_text" class="label-text text label_des">Description</label>
+               <textarea name="des_text" class="text label-text" id="des_text" cols="30" rows="5"></textarea>
+               <input type="submit" name="submit" class="btn btn-submit text" value="Submit">
+          </form>
+     </div>
+</body>
+</html>
